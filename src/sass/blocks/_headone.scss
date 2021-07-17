@@ -1,0 +1,60 @@
+.headone {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    background: url(../../img/Layer_1.png) center (center/cover) no-repeat;
+    .cup {
+        display: grid;
+        grid-template-columns: 140px 550px;
+        column-gap: 460px;
+        padding-top: 39px;
+        &__title {
+            ul {
+                display: flex;
+                justify-content: space-between;
+            }
+            &_text {
+                font-size: 13px;
+                line-height: 26px;
+                color: #ffffff;
+                font-weight: 500;
+                list-style-type: none;
+                margin-top: 24px;
+                cursor: pointer;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+    .picture {
+        position: absolute;
+        right: 100px;
+        bottom: -25px;
+    }
+    .blocks {
+        margin-top: 135px;
+        &__title {
+            width: 613px;
+            height: 106px;
+            font-size: 42px;
+            line-height: 48px;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        &__subtitle {
+            width: 613px;
+            height: 81px;
+            font-size: 24px;
+            line-height: 30px;
+            color: #ffffff;
+            font-weight: 300;
+            margin-top: 25px;
+        }
+        button {
+            @include btn;
+            margin-top: 39px;
+            cursor: pointer;
+        }
+    }
+}
