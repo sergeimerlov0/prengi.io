@@ -1,0 +1,191 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 992px;
+    }
+    .head {
+        &__blocks {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        &__block {
+            width: 150px;
+        }
+    }
+    .headone {
+        .cup {
+            column-gap: 260px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+    .blocks {
+        margin-left: 20px;
+        
+    }
+    &__title {
+        width: 500px;
+        font-size: 35px;
+    }
+    
+}
+@media (max-width: 992px) {
+    .container {
+        width: 776px;
+    }
+    .head {
+        &__blocks {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        &__flag {
+            margin: 0 auto;
+        }
+        &__first {
+            flex-direction: column;
+        }
+        &__block {
+            width: 100px;
+            &_title {
+                margin-top: 5px;
+                text-align: center;
+            }
+        }
+    }
+    .picture {
+        display: none;
+    }
+    .headone {
+        .cup {
+            column-gap: 30px;
+        }
+    }
+    .blocks {
+        &__title {
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__subtitle {
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__btn {
+            display: block;
+            margin: 39px auto 0 auto;
+        }
+    }
+}
+@media (max-width: 776px) {
+    .container {
+        width: 576px;
+    }
+    .head {
+        display: none;
+    }
+    .headone {
+        position: relative;
+        .blocks {
+            &__title {
+                width: 510px;
+                font-size: 28px;
+            }
+            &__subtitle {
+                width: 510px;
+                font-size: 20px;
+            }
+        }
+    }
+    .cup {
+        &__title {
+            display: none;
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0,0,0,.8);
+            transition: 0.6s all;
+            
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            &_active {
+                display: block;
+            }
+        }
+        
+    }
+    .humburger {
+        display: block;
+        position: absolute;
+        right: 26px;
+        top: 26px;
+        width: 20px;
+        height: 12px;
+        span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        &__active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+        } 
+        
+    &__active {
+        span {
+            margin-bottom: -2px;
+            &:nth-child(1) {
+                transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: translateY(3px) rotate(45deg);
+            }
+        }
+    }
+    }
+     
+}
+@media(max-width: 576px) {
+    .container {
+        width: 300px;
+    }
+    .headone {
+        .blocks {
+            margin-top: 85px;
+            &__title {
+                width: 300px;
+            }
+            &__subtitle {
+                width: 300px;
+                margin-top: 60px;
+            }
+        }
+        .cup {
+            &__title {
+                width: 70%;
+            }
+        }
+    }
+}

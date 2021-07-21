@@ -3,6 +3,7 @@
     width: 100%;
     min-height: 700px;
     background: url(../../img/Layer_1.png) center (center/cover) no-repeat;
+    
     .cup {
         display: grid;
         grid-template-columns: 140px 550px;
@@ -26,6 +27,7 @@
                 }
             }
         }
+        
     }
     .picture {
         position: absolute;
@@ -55,6 +57,7 @@
             @include btn;
             margin-top: 39px;
             cursor: pointer;
+            
         }
     }
 }

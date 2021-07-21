@@ -1,0 +1,26 @@
+.prengi {
+    padding-top: 79px;
+    min-height: 600px;
+    &__blocks {
+        display: grid;
+        grid-template: repeat(2, 255px) / repeat(3, 360px);
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    &__block {
+        width: 360px;
+        height: 255px;
+    }
+    &__img {
+       text-align: center;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 26px;
+        color: #393939;
+        font-weight: 300;
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+    }
+}
