@@ -26,6 +26,14 @@
         width: 500px;
         font-size: 35px;
     }
+    .prengi {
+        &__blocks {
+            grid-template: repeat(2,255px)/repeat(3,330px);
+        }
+        &__block {
+            width: 330px;
+        }
+    }
     
 }
 @media (max-width: 992px) {
@@ -71,6 +79,17 @@
         &__btn {
             display: block;
             margin: 39px auto 0 auto;
+        }
+    }
+    .prengi {
+        &__blocks {
+            grid-template: repeat(2,255px)/repeat(3,250px);
+        }
+        &__block {
+            width: 250px;
+        }
+        &__title {
+            width: 250px;
         }
     }
 }
@@ -165,6 +184,17 @@
         }
     }
     }
+    .prengi {
+        &__blocks {
+            grid-template: repeat(3,255px)/repeat(2,300px);
+        }
+        &__block {
+            width: 300px;
+        }
+        &__title {
+            width: 300px;
+        }
+    }
      
 }
 @media(max-width: 576px) {
@@ -186,6 +216,18 @@
             &__title {
                 width: 70%;
             }
+        }
+    }
+    .prengi {
+        &__blocks {
+            grid-template: repeat(6,255px)/repeat(1,300px);
+            justify-content: center;
+        }
+        &__block {
+            width: 300px;
+        }
+        &__title {
+            width: 300px;
         }
     }
 }

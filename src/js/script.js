@@ -13,3 +13,17 @@ const humburger = document.querySelector('.humburger'),
             cup.classList.toggle('cup__title_active');
         });
       });
+
+//modal
+const modal = document.querySelector('.modal'),
+      btns = document.querySelector('.btn1'),
+      btn2 = document.querySelector('.button_main'),
+      clos = document.querySelector('.modal__close');
+
+btns.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+clos.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
